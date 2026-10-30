@@ -7,9 +7,12 @@
     "start": "node scripts/serve.js",
     "test": "node --test tests/*.test.js",
     "simulate": "node scripts/simulate.js",
-    "test:browser": "node scripts/browser-smoke.js"
+    "test:browser": "npm run build && node scripts/browser-smoke.js",
+    "build": "node scripts/build.js",
+    "test:download": "npm run build && node scripts/download-smoke.js"
   },
   "devDependencies": {
+    "esbuild": "0.28.2",
     "playwright": "1.64.1"
   }
 }

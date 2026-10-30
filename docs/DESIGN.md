@@ -37,3 +37,9 @@ A versão possui conteúdo funcional e objetivos finitos. Ainda não há evidên
 O primeiro prestígio na simulação híbrida ocorreu em cerca de 14 minutos, e na automática em cerca de 20 minutos. A estratégia estritamente manual avança mais devagar; o jogo incentiva combinar cliques e automação. Nas seis horas simuladas, estratégias automáticas chegam perto do último material, mas ainda não compram todas as melhorias. Isso demonstra que **a duração de dezenas/centenas de horas ainda não foi atingida como evidência de teste**. Os intervalos de compra da estratégia manual continuam sendo um ponto de atenção para futuras rodadas de balanceamento.
 
 A revisão também corrigiu um problema de relevância tardia: a parcela da produção automática adicionada ao clique agora recebe os bônus de Fúria, runas e artefatos de clique. Um teste de regressão verifica esses multiplicadores com um gerador do último nível.
+
+## Distribuição por download
+
+`npm run build` usa esbuild para gerar um `index.html` independente, com JavaScript clássico encapsulado, CSS e fontes incorporados. Não há imports de módulos, caminhos absolutos de recursos ou requisições externas durante a abertura. A versão para download não precisa de Node nem servidor; o código modular continua em `src/` para desenvolvimento.
+
+`npm run test:download` copia apenas o HTML para uma pasta temporária e testa cliques, compra, fontes, salvamento/recarregamento e largura mobile. O modo padrão usa `file://`. O Chromium gerenciado deste ambiente recusou esse protocolo com `ERR_BLOCKED_BY_ADMINISTRATOR`; a validação local usou `DOWNLOAD_TEST_HTTP=1 CHROMIUM_PATH=/usr/bin/chromium npm run test:download`, que serve exclusivamente esse HTML isolado por HTTP. Esse resultado não é apresentado como verificação direta de `file://`.

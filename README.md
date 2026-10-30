@@ -2,17 +2,25 @@
 
 Um clicker incremental de forja, em português, com arte original em SVG, fontes locais e nenhum serviço externo necessário durante o jogo.
 
-## Jogar localmente
+## Baixar e jogar (sem instalar nada)
+
+1. No GitHub, clique em **Code → Download ZIP**.
+2. No Windows, clique com o botão direito no ZIP e escolha **Extrair tudo**.
+3. Abra a pasta extraída e dê dois cliques em **index.html**.
+
+O HTML inclui o jogo, estilos e fontes. Funciona diretamente no navegador, sem Node, servidor ou conexão com a internet. Também suporta abrir apenas o HTML pelo ZIP, mas extrair tudo mantém o endereço do save mais estável. Os saves locais ficam associados ao navegador e ao caminho do arquivo: antes de mover a pasta ou baixar uma atualização, exporte seu progresso nas configurações.
+
+## Desenvolver localmente
 
 Requer Node.js 20.11+ (validado com Node 24).
 
 ```sh
+npm ci
+npm run build
 npm start
 ```
 
-Abra `http://localhost:5173` no navegador. `PORT=8080 npm start` altera a porta. A aplicação também pode ser publicada em hospedagem estática: sirva `index.html` e a pasta `src/`, preservando a estrutura. Não abra o HTML diretamente por `file://`, pois os módulos precisam de HTTP.
-
-Para jogar, não é necessário instalar pacotes. As dependências de desenvolvimento são usadas apenas pelos testes de navegador.
+Abra `http://localhost:5173` no navegador. `PORT=8080 npm start` altera a porta. Após editar `src/`, execute `npm run build` e atualize a página. O build gera o `index.html` independente que fica versionado para download. O mesmo arquivo pode ser servido em hospedagem estática, inclusive em subpastas.
 
 ## Como jogar
 
@@ -49,6 +57,7 @@ npm run simulate -- 21600         # seis horas simuladas por estratégia
 npm ci                           # ferramentas de desenvolvimento
 npx playwright install chromium  # caso não haja um Chromium instalado
 npm run test:browser              # inicia e encerra seu próprio servidor na porta 5181
+npm run test:download             # testa o HTML isolado, aberto diretamente por file://
 ```
 
 Para usar Chromium do sistema:
@@ -68,7 +77,7 @@ O teste de navegador usa um perfil descartável e verifica cliques, compras, mel
 - `src/engine.js`: regras econômicas, progressão e serialização, independentes do DOM.
 - `src/app.js`: interface, efeitos, acessibilidade e persistência no navegador.
 - `src/art.js` / `src/style.css`: desenho original da espada e identidade visual.
-- `scripts/`: servidor local, simulação e teste de navegador.
+- `scripts/`: empacotamento em HTML independente, servidor local, simulação e testes de navegador.
 - `tests/`: testes automatizados da lógica.
 
 ## Dados e licenças
