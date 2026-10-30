@@ -1,0 +1,270 @@
+{
+  "generatedAt": "2026-10-30T12:00:08.705Z",
+  "notes": "Deterministic 1-click/s, 5-second marginal-ROI purchasing; idle bootstraps with 20 clicks. Not a duration guarantee or exhaustive strategy search.",
+  "reports": [
+    {
+      "strategy": "manual",
+      "simulatedSeconds": 21600,
+      "firstAutoSeconds": null,
+      "firstPrestigeSeconds": 3370,
+      "prestiges": 1,
+      "purchases": 37,
+      "longestPurchaseGapSeconds": 2870,
+      "produced": "1.00e9",
+      "rate": "0",
+      "generators": 0,
+      "upgrades": 7,
+      "materials": 2,
+      "snapshots": [
+        {
+          "seconds": 1800,
+          "produced": "2.62e5",
+          "rate": "0",
+          "sword": 2
+        },
+        {
+          "seconds": 3600,
+          "produced": "1.23e6",
+          "rate": "0",
+          "sword": 2
+        },
+        {
+          "seconds": 5400,
+          "produced": "7.22e6",
+          "rate": "0",
+          "sword": 3
+        },
+        {
+          "seconds": 7200,
+          "produced": "2.26e7",
+          "rate": "0",
+          "sword": 3
+        },
+        {
+          "seconds": 9000,
+          "produced": "4.57e7",
+          "rate": "0",
+          "sword": 3
+        },
+        {
+          "seconds": 10800,
+          "produced": "1.00e8",
+          "rate": "0",
+          "sword": 3
+        },
+        {
+          "seconds": 12600,
+          "produced": "1.53e8",
+          "rate": "0",
+          "sword": 3
+        },
+        {
+          "seconds": 14400,
+          "produced": "2.17e8",
+          "rate": "0",
+          "sword": 3
+        },
+        {
+          "seconds": 16200,
+          "produced": "3.59e8",
+          "rate": "0",
+          "sword": 4
+        },
+        {
+          "seconds": 18000,
+          "produced": "5.99e8",
+          "rate": "0",
+          "sword": 4
+        },
+        {
+          "seconds": 19800,
+          "produced": "8.69e8",
+          "rate": "0",
+          "sword": 4
+        },
+        {
+          "seconds": 21600,
+          "produced": "1.00e9",
+          "rate": "0",
+          "sword": 2
+        }
+      ]
+    },
+    {
+      "strategy": "idle",
+      "simulatedSeconds": 21600,
+      "firstAutoSeconds": 15,
+      "firstPrestigeSeconds": 1220,
+      "prestiges": 3,
+      "purchases": 4089,
+      "longestPurchaseGapSeconds": 60,
+      "produced": "7.61e50",
+      "rate": "5.61e47",
+      "generators": 3360,
+      "upgrades": 187,
+      "materials": 23,
+      "snapshots": [
+        {
+          "seconds": 1800,
+          "produced": "1.18e9",
+          "rate": "42",
+          "sword": 1
+        },
+        {
+          "seconds": 3600,
+          "produced": "3.46e9",
+          "rate": "3.61e5",
+          "sword": 3
+        },
+        {
+          "seconds": 5400,
+          "produced": "7.34e19",
+          "rate": "2.29e17",
+          "sword": 7
+        },
+        {
+          "seconds": 7200,
+          "produced": "6.33e26",
+          "rate": "4.50e24",
+          "sword": 11
+        },
+        {
+          "seconds": 9000,
+          "produced": "7.01e29",
+          "rate": "1.13e27",
+          "sword": 12
+        },
+        {
+          "seconds": 10800,
+          "produced": "6.56e37",
+          "rate": "1.12e35",
+          "sword": 15
+        },
+        {
+          "seconds": 12600,
+          "produced": "1.17e41",
+          "rate": "7.64e38",
+          "sword": 17
+        },
+        {
+          "seconds": 14400,
+          "produced": "1.09e45",
+          "rate": "3.23e42",
+          "sword": 19
+        },
+        {
+          "seconds": 16200,
+          "produced": "6.65e47",
+          "rate": "1.63e45",
+          "sword": 20
+        },
+        {
+          "seconds": 18000,
+          "produced": "2.59e49",
+          "rate": "2.11e46",
+          "sword": 21
+        },
+        {
+          "seconds": 19800,
+          "produced": "1.05e50",
+          "rate": "5.76e46",
+          "sword": 22
+        },
+        {
+          "seconds": 21600,
+          "produced": "7.61e50",
+          "rate": "5.61e47",
+          "sword": 23
+        }
+      ]
+    },
+    {
+      "strategy": "hybrid",
+      "simulatedSeconds": 21600,
+      "firstAutoSeconds": 5,
+      "firstPrestigeSeconds": 830,
+      "prestiges": 3,
+      "purchases": 4235,
+      "longestPurchaseGapSeconds": 20,
+      "produced": "1.72e51",
+      "rate": "6.11e47",
+      "generators": 3430,
+      "upgrades": 191,
+      "materials": 23,
+      "snapshots": [
+        {
+          "seconds": 1800,
+          "produced": "1.17e9",
+          "rate": "1.51e6",
+          "sword": 3
+        },
+        {
+          "seconds": 3600,
+          "produced": "1.14e14",
+          "rate": "8.15e11",
+          "sword": 5
+        },
+        {
+          "seconds": 5400,
+          "produced": "2.91e25",
+          "rate": "8.43e22",
+          "sword": 10
+        },
+        {
+          "seconds": 7200,
+          "produced": "4.27e27",
+          "rate": "1.13e25",
+          "sword": 11
+        },
+        {
+          "seconds": 9000,
+          "produced": "7.95e30",
+          "rate": "1.73e28",
+          "sword": 12
+        },
+        {
+          "seconds": 10800,
+          "produced": "2.01e38",
+          "rate": "1.84e35",
+          "sword": 15
+        },
+        {
+          "seconds": 12600,
+          "produced": "1.10e42",
+          "rate": "4.80e39",
+          "sword": 17
+        },
+        {
+          "seconds": 14400,
+          "produced": "4.02e45",
+          "rate": "4.47e42",
+          "sword": 19
+        },
+        {
+          "seconds": 16200,
+          "produced": "2.56e48",
+          "rate": "3.14e45",
+          "sword": 21
+        },
+        {
+          "seconds": 18000,
+          "produced": "5.70e49",
+          "rate": "3.93e46",
+          "sword": 22
+        },
+        {
+          "seconds": 19800,
+          "produced": "2.24e50",
+          "rate": "6.23e46",
+          "sword": 22
+        },
+        {
+          "seconds": 21600,
+          "produced": "1.72e51",
+          "rate": "6.11e47",
+          "sword": 23
+        }
+      ]
+    }
+  ]
+}
